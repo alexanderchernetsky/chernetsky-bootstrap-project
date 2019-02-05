@@ -8,34 +8,46 @@
 </head>
 <body>
   <div class="container-fluid">
-    <!--header-->
-    <nav class="navbar navbar-light bg-light d-none d-sm-flex">
-      <a class="navbar-brand">Guitar Shop</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </nav>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+      <a class="navbar-brand" href="#">
+        <h1>Guitar Shop</h1>
+      </a>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link pr-5 active" href="#">Electric Guitars<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link pr-5" href="#">Acoustic Guitars</a>
-          <a class="nav-item nav-link pr-5" href="#">Amplifiers</a>
-          <a class="nav-item nav-link pr-5" href="#">Accessories</a>
-          <a class="nav-item nav-link pr-5" href="#">Bass guitars</a>
-          <a class="nav-item nav-link pr-5" href="#">Second Hand</a>
-          <a class="nav-item nav-link pr-5" href="#">Recording</a>
-          <a class="nav-item nav-link pr-5" href="#">Brands</a>
-        </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">Products</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Electric guitars</a>
+              <a href="#" class="dropdown-item">Acoustic Guitars</a>
+              <a href="#" class="dropdown-item">Bass guitars</a>
+              <a href="#" class="dropdown-item">Accessories</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <h1 class="mt-5 text-center">Electric Guitars</h1>
+    <h2 class="mt-4 text-center">Electric Guitars</h2>
     <div class="card-deck mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../img/guitar-1.png" class="card-img-top" alt="img">
@@ -115,15 +127,15 @@
     <nav aria-label="Page navigation" class="m-4">
       <ul class="pagination justify-content-center">
         <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
+          <a class="page-link text-dark" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
+          <a class="page-link text-dark" href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
@@ -133,10 +145,10 @@
 
 
     <hr>
-    <h2 class="my-5 text-center">Achievements</h2>
+    <h2 class="my-4 text-center">Achievements</h2>
 
-    <div class="row">
-      <div class="col-2 text-center">
+    <div class="row achievements mx-0 my-4 rounded border">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle mx-auto" src="../img/awards/awards3.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">People of the Moment 2017</h5>
         <p class="text-center">
@@ -144,14 +156,14 @@
           bigger so we can continue delivering your orders into your hands!
         </p>
       </div>
-      <div class="col-2 text-center">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle text-center" src="../img/awards/awards4.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">YouTube Silver Play Button Award</h5>
         <p class="text-center">
           For gaining 500,000 subscribers on the TV channel.
         </p>
       </div>
-      <div class="col-2 text-center">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle text-center" src="../img/awards/awards1.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">NAMM 2018: Dealer of the Year</h5>
         <p class="text-center">
@@ -160,21 +172,21 @@
           picked by an independant panel of judges.
         </p>
       </div>
-      <div class="col-2 text-center">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle text-center" src="../img/awards/awards2.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">Internet Retailing Top 150 Retailer</h5>
         <p class="text-center">
           For being one of the top 150 UK E-Commerce retailers.
         </p>
       </div>
-      <div class="col-2 text-center">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle text-center" src="../img/awards/awards5.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">NAMM 2017 & 2018: Best Online Engagement</h5>
         <p class="text-center">
           We scooped the Best Online Engagement award for two consecutive years at the Summer NAMM event in Nashville!
         </p>
       </div>
-      <div class="col-2 text-center">
+      <div class="col-2 text-center mt-3">
         <img class="rounded-circle text-center" src="../img/awards/awards6.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">Feefo Gold Trusted Service 2018</h5>
         <p class="text-center">
@@ -186,9 +198,9 @@
 
     <hr>
     <!--Jumbotron-->
-    <div class="row my-5">
+    <div class="row my-4">
       <div class="col-6 pr-0">
-        <div class="jumbotron mb-0">
+        <div class="jumbotron mb-0 rounded-left">
           <p class="lead">a little more on what we do...</p>
           <h1 class="display-4">Guitars for everyone!</h1>
           <p class="lead">
@@ -201,33 +213,35 @@
         </div>
       </div>
       <div class="col-6 pl-0">
-        <div class="jumbotron_image"></div>
+        <div class="jumbotron_image rounded-right"></div>
       </div>
     </div>
+
+    <hr>
     
     <!--footer-->
-    <div class="row bg-light flex-column">
+    <div class="row flex-column mx-0 mt-4 footer rounded">
       <div class="row mx-0">
-        <div class="col-4">
+        <div class="col-4 mt-3">
           <h5 class="text-uppercase">Customer support</h5>
           <hr>
           <span class="phone"></span>
-          <a href="">Contact us</a><br>
+          <a href="" class="text-dark">Contact us</a><br>
           <span class="smile"></span>
-          <a href="">Who we are</a><br>
+          <a href="" class="text-dark">Who we are</a><br>
           <span class="tick"></span>
-          <a href="">Warranty and returns policy</a><br>
+          <a href="" class="text-dark">Warranty and returns policy</a><br>
           <span class="avatar"></span>
-          <a href="">My account</a><br>
+          <a href="" class="text-dark">My account</a><br>
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-3">
           <h5 class="text-uppercase">Other Services</h5>
           <hr>
-          <a href="">Repairs of guitars</a><br>
-          <a href="">Guitar painting</a><br>
-          <a href="">Distributor of Musical Instruments</a><br>
+          <a href="" class="text-dark">Repairs of guitars</a><br>
+          <a href="" class="text-dark">Guitar painting</a><br>
+          <a href="" class="text-dark">Distributor of Musical Instruments</a><br>
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-3">
           <h5 class="text-uppercase">Follow us</h5>
           <hr>
           <a href="" class="soc-icon">
@@ -252,7 +266,7 @@
           </a>
         </div>
       </div>
-      <div class="row mx-0">
+      <div class="row mx-0 mt-4">
         <p class="mx-auto">
           © Guitar Shop. Telephone: +34 933 238 831 London, England
         </p>

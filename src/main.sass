@@ -1,6 +1,11 @@
-body
-  background-color: lightblue
+//variable overrides
+$primary: #fd7e14
+$body-bg: lightgray
 
+//importing bootstrap styles
+@import '../node_modules/bootstrap/scss/bootstrap'
+
+//custom styles
 .jumbotron_image
   width: 100%
   height: 100%
@@ -9,23 +14,24 @@ body
   background-size: cover
   background-repeat: no-repeat
 
-.phone, .smile, .tick, .avatar
-  display: inline-block
-  width: 16px
-  height: 16px
-  margin-right: 3px
-
 .phone
-  background: url("../img/icons/phone-call.png")
+  background: url("../img/icons/call-answer1.png")
 
 .smile
-  background: url("../img/icons/happy.png")
+  background: url("../img/icons/smiling.png")
 
 .tick
   background: url("../img/icons/checked.png")
 
 .avatar
-  background: url("../img/icons/avatar.png")
+  background: url("../img/icons/man-user.png")
+
+.phone, .smile, .tick, .avatar
+  display: inline-block
+  width: 16px
+  height: 16px
+  margin-right: 3px
+  background-size: cover
 
 .icon-facebook
   color: #2B4B82
@@ -44,3 +50,9 @@ body
   margin: 0 5px
   &:hover
     opacity: 0.9
+
+.footer, .achievements
+  background-color: #E9ECEF
+
+.nav-link
+  font-size: 1.2rem
