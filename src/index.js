@@ -1,7 +1,5 @@
 import 'bootstrap';
 import 'jquery';
 import 'popper.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './main.css';
-
-alert('it works!');
+import './main.sass';
+import '@fortawesome/fontawesome-free/js/all';
