@@ -10,20 +10,21 @@
   <div class="container-fluid">
     <!--navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#home">
         <h1>Guitar Shop</h1>
       </a>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-2 d-inline-block w-auto align-middle" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active">Home</a>
@@ -47,9 +48,10 @@
       </div>
     </nav>
 
+    <!--guitars-->
     <h2 class="mt-4 text-center">Electric Guitars</h2>
-    <div class="card-deck mb-4">
-      <div class="card" style="width: 18rem;">
+    <div class="card-deck mb-4 justify-content-around flex-wrap flex-row">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-1.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">GIBSON ES-335 1958 PREMIERE LIMITED RUN 2018.</h5>
@@ -58,7 +60,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-2.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">DUESENBERG STARPLAYER TV VINTAGE WHITE.</h5>
@@ -67,7 +69,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-3.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">DUESENBERG STARPLAYER TV BLACK-SPARKLE.</h5>
@@ -76,7 +78,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-4.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">DUESENBERG BONNEVILLE BLACK.</h5>
@@ -84,9 +86,8 @@
           <a href="#" class="btn btn-primary">Add to shopping cart</a>
         </div>
       </div>
-    </div>
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
+
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-5.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">FENDER STRATOCASTER AMERICAN ELITE EB SATIN ICE BLUE METALLIC.</h5>
@@ -95,7 +96,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-6.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">GIBSON LES PAUL CLASSIC 2019 GOLD TOP 8167.</h5>
@@ -104,7 +105,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-7.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">DGIBSON EXPLORER LZZY HALE SIGNATURE EBONY.</h5>
@@ -113,7 +114,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card mb-4" style="width: 18rem;">
         <img src="../img/guitar-8.png" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">GIBSON LES PAUL JUNIOR TRIBUTE DOUBLE CUT 2019.</h5>
@@ -122,6 +123,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!--pagination-->
     <nav aria-label="Page navigation" class="m-4">
@@ -143,12 +146,13 @@
     </nav>
 
 
-
+    <!--achievements-->
     <hr>
-    <h2 class="my-4 text-center">Achievements</h2>
+    <h2 class="mt-4 mb-0 text-center">Achievements</h2>
+    <p class="muted text-uppercase text-center my-0">Here are some of our achievements, they keep on coming!</p>
 
     <div class="row achievements mx-0 my-4 rounded border">
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle mx-auto" src="../img/awards/awards3.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">People of the Moment 2017</h5>
         <p class="text-center">
@@ -156,14 +160,14 @@
           bigger so we can continue delivering your orders into your hands!
         </p>
       </div>
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle text-center" src="../img/awards/awards4.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">YouTube Silver Play Button Award</h5>
         <p class="text-center">
           For gaining 500,000 subscribers on the TV channel.
         </p>
       </div>
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle text-center" src="../img/awards/awards1.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">NAMM 2018: Dealer of the Year</h5>
         <p class="text-center">
@@ -172,21 +176,21 @@
           picked by an independant panel of judges.
         </p>
       </div>
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle text-center" src="../img/awards/awards2.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">Internet Retailing Top 150 Retailer</h5>
         <p class="text-center">
           For being one of the top 150 UK E-Commerce retailers.
         </p>
       </div>
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle text-center" src="../img/awards/awards5.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">NAMM 2017 & 2018: Best Online Engagement</h5>
         <p class="text-center">
           We scooped the Best Online Engagement award for two consecutive years at the Summer NAMM event in Nashville!
         </p>
       </div>
-      <div class="col-2 text-center mt-3">
+      <div class="col-6 col-sm-4 text-center mt-3 col-lg-2">
         <img class="rounded-circle text-center" src="../img/awards/awards6.png" alt="prize">
         <h5 class="text-center mt-4 text-uppercase">Feefo Gold Trusted Service 2018</h5>
         <p class="text-center">
@@ -199,7 +203,7 @@
     <hr>
     <!--Jumbotron-->
     <div class="row my-4">
-      <div class="col-6 pr-0">
+      <div class="col-12 col-md-6 pr-3 pr-md-0">
         <div class="jumbotron mb-0 rounded-left">
           <p class="lead">a little more on what we do...</p>
           <h1 class="display-4">Guitars for everyone!</h1>
@@ -212,7 +216,7 @@
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
       </div>
-      <div class="col-6 pl-0">
+      <div class="col-6 pl-0 d-none d-md-block">
         <div class="jumbotron_image rounded-right"></div>
       </div>
     </div>
@@ -222,7 +226,7 @@
     <!--footer-->
     <div class="row flex-column mx-0 mt-4 footer rounded">
       <div class="row mx-0">
-        <div class="col-4 mt-3">
+        <div class="col-4 mt-3 px-1 px-sm-2 px-md-4">
           <h5 class="text-uppercase">Customer support</h5>
           <hr>
           <span class="phone"></span>
@@ -234,14 +238,16 @@
           <span class="avatar"></span>
           <a href="" class="text-dark">My account</a><br>
         </div>
-        <div class="col-4 mt-3">
+
+        <div class="col-4 mt-3 px-1 px-sm-2 px-md-4">
           <h5 class="text-uppercase">Other Services</h5>
           <hr>
           <a href="" class="text-dark">Repairs of guitars</a><br>
           <a href="" class="text-dark">Guitar painting</a><br>
           <a href="" class="text-dark">Distributor of Musical Instruments</a><br>
         </div>
-        <div class="col-4 mt-3">
+
+        <div class="col-4 mt-3 px-1 px-sm-2 px-md-4">
           <h5 class="text-uppercase">Follow us</h5>
           <hr>
           <a href="" class="soc-icon">
