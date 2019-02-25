@@ -58,10 +58,11 @@ $body-bg: lightgray
 .card
   min-width: 280px
   max-width: 340px
+  @include media-breakpoint-down(sm)
+    flex: 1 0 0
 
 .container-fluid
   min-width: 380px
-  background: url("../img/back.jpg")
 
 html
   font-size: 0.8rem
@@ -72,20 +73,10 @@ html
   @include media-breakpoint-up(lg)
     font-size: 1rem
 
-// @include media-breakpoint-up(sm)
-  html
-    font-size: 0.9rem
-
-// @include media-breakpoint-up(md)
-  html
-    font-size: 0.95rem
-
-// @include media-breakpoint-up(lg)
-  html
-    font-size: 1rem
-
 .navbar-brand
   max-width: 200px
+  overflow: hidden
+  border-radius: 12px !important
 
 .shop-logo
   width: 100%
